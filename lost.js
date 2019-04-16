@@ -11,7 +11,7 @@ class Lost extends Phaser.Scene {
 
   create() {
     this.add.image((window.innerWidth/2), (window.innerHeight/2), 'background');
-    this.add.text((window.innerWidth*0.45), (window.innerHeight*0.1), 'Punkty: ' + myPoints, { fontSize: '32px', fill: '#000', fontFamily: 'Comic Sans MS' });
+    this.add.text(25, 25, 'Punkty: ' + myPoints, { fontSize: '32px', fill: '#000', fontFamily: 'Comic Sans MS' });
     this.add.image((window.innerWidth/2), (window.innerHeight*0.3), 'gameOver');
     var playAgain = this.add.image((window.innerWidth/2), (window.innerHeight*0.7), 'playAgain');
     playAgain.setInteractive().on('pointerdown', function(event) {
